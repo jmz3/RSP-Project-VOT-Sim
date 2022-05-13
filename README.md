@@ -29,6 +29,8 @@ This repository is for the final project of EN 530.707 Robot System Programming.
 <br></br>
  - [RSP-Project-VOT-Pro](https://github.com/jeremyzz830/RSP-Project-VOT-Pro) : -Pro is short for prototype
  
+ > for more detials about packages, nodes and topics, please check [Docs/Docs.md](Docs/Docs.md)
+ 
 
 
 <br></br>
@@ -139,6 +141,4 @@ $ roslaunch my_tbot3_nav nav_simulation.launch
 ![mapping_rviz.gif](DEMO/nav_rviz.gif)
 ![mapping_gazebo.gif](DEMO/nav_gazebo.gif)
 
-
-> for more detials check [Docs/Docs.md](Docs/Docs.md)
 
