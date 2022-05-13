@@ -79,12 +79,27 @@ This is the second section of our project. This launch file will launch Gazebo a
 
 ## Workflow
 step1 :
-
-map yaml save dir
+```bash
+$ roslaunch my_tbot3_workcontrol project_init.launch control_mode:=auto
+```
+This command will start the SLAM process with autonomous driving for the robot.  
 
 step2 :  
 
-.  
-.  
+Once the map is complete, use the dynamic reconfigure GUI and switch the “Switch_to_Navigation” button from “NO” to “YES”. This will then trigger a shutdown sequence that automatically saves the map (into the Downloads folder) and terminates the node. Use “ctrl C” to shut down any remaining node.
+
+Step 3.  
+```bash
+$ roslaunch my_tbot3_nav nav_simulation.launch 
+```
+This launch file will start several features.  
+1. Start RVIZ and Gazebo and launch with the map saved in the previous step.  
+2. Place a ball into the Gazebo as the target. 
+3. Start an initializing node, “nav_simulation_init_node”, for placing the robot in the simulation world in preparation for 2D Navigation.  
+4. Start “fake_goal_node”. This node publishes navigation goals to “/fake_goal” Topic in geometry_msgs/Point. The node also subscribes to the “move_base/result” Topic to monitor the results of robot’s actions.  
+
+As the goals are published, the “nav_simulation_init_node” subscribes to the topic and transcribes the goal as a geometry_msgs/PoseStamped message to publish to the “/move_base_simple/goal”. Initially, the robot will be put in a patrol mode that circles the environment. Each time the robot reaches a navigation goal, a random integer will be generated between 1 and 10, and if the number is 1, the robot will be asked to travel to the ball, which is the final navigation goal.  
+
+
 > for more detials check [Docs/Docs.md](Docs/Docs.md)
 
