@@ -1,5 +1,16 @@
 <h1 align="center">RSP Final Project</h1>
-<h2 align="center">Vision Based Object Tracking Turtlebot</h2>
+<h2 align="center">Vision-Based Object-Tracking Turtlebot</h2>
+
+# Contributors
+
+Created by 
+[Jiaming Zhang](https://github.com/jeremyzz830): JHED ID : jzhan282
+[Yixun 'Daniel' Wang](https://github.com/DanielW1112): JHED ID : ywang317
+[Tianyi Weng](https://github.com/WengTianyi): JHED ID : tweng1
+
+May 13th 2022
+@ Johns Hopkins University
+All rights reserved
 
 # Introduction
 
