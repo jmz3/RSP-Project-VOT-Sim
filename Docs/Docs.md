@@ -1,6 +1,10 @@
 <h1 align="center">RSP Final Project</h1>
 <h2 align="center">Vision Based Object Tracking Turtlebot</h2>
 
+<p align="center">
+<img src="https://github.com/jeremyzz830/RSP-Project-VOT-Sim/blob/master/Docs/update_structure.pdf" width="530px" height="270px"/>
+</p>
+
 # 0. Content
 
 # 1.  Packages
