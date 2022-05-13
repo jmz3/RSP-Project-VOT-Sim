@@ -2,7 +2,7 @@
 <h2 align="center">Vision Based Object Tracking Turtlebot</h2>
 
 <p align="center">
-<img src="https://github.com/jeremyzz830/RSP-Project-VOT-Sim/blob/master/Docs/update_structure.pdf" width="530px" height="270px"/>
+<img src="https://github.com/jeremyzz830/RSP-Project-VOT-Sim/blob/master/Docs/simulation_only.png" width="530px" height="270px"/>
 </p>
 
 # 0. Content
