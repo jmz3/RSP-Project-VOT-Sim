@@ -123,7 +123,7 @@ As the goals are published, the “nav_simulation_init_node” subscribes to the
 
 # IV. Simulation Demo
 
-![mapping_rviz.gif]DEMO/mapping_rviz.gif
+![mapping_rviz.gif](DEMO/mapping_rviz.gif)
 
 > for more detials check [Docs/Docs.md](Docs/Docs.md)
 
