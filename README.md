@@ -11,8 +11,8 @@
 ### 1.1.2 ros  required package
 ```bash
 $ sudo apt-get install ros-melodic-timed_roslaunch
-$ mkdir vot_ws/src
-$ cd vot_ws/src
+$ mkdir vot_ws/simulation/src
+$ cd vot_ws/prototype/src
 $ git clone https://github.com/ros-perception/slam_gmapping.git
 ```
 
