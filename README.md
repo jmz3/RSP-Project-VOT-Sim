@@ -102,13 +102,13 @@ roslaunch my_tbot3_nav nav_simulation.launch
 This is the second section of our project. This launch file will launch Gazebo and RVIZ. Initially, the robot will be placed in a patrol mode and travel around the simulated environment by following a set of pre-determined waypoints. Via a random number generator, at certain time, the robot will be asked to move in front of the ball. 
 
 ## Workflow
-step1 :
+Step1 :
 ```bash
 $ roslaunch my_tbot3_workcontrol project_init.launch control_mode:=auto
 ```
 This command will start the SLAM process with autonomous driving for the robot.  
 
-step2 :  
+Step2 :  
 
 Once the map is complete, use the dynamic reconfigure GUI and switch the “Switch_to_Navigation” button from “NO” to “YES”. This will then trigger a shutdown sequence that automatically saves the map (into the Downloads folder) and terminates the node. Use “ctrl C” to shut down any remaining node.
 
