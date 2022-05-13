@@ -16,10 +16,10 @@
 
 <br></br>
 # Table of Content
-#0. [Introduction](#0-Introduction)
-#1. [Prerequisites](#I-Prerequisites)
-#2. [Running Tutorial](#II-Running-Tutorial)
-#3. [Simulation Demo](#IV-Simulation-Demo)
+0. [Introduction](#0-Introduction)
+1. [Prerequisites](#I-Prerequisites)
+2. [Running Tutorial](#II-Running-Tutorial)
+3. [Simulation Demo](#IV-Simulation-Demo)
 
 
 <br></br>
