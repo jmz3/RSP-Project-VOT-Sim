@@ -15,10 +15,10 @@
 </h4>
 
 
-Table of Content
-1. [Introduction](#1-Introduction)
-2. [Prerequisites](#2-Prerequisites)
-3. [Running Tutorial](#3-Running-Tutorial)
+### Table of Content
+0. [Introduction](#1-Introduction)
+1. [rerequisites](#2-Prerequisites)
+2. [Running Tutorial](#3-Running-Tutorial)
 
 
 # 0. Introduction
