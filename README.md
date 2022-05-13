@@ -56,6 +56,9 @@ $ git clone https://github.com/ros-perception/slam_gmapping.git
 ```bash
 export turtlebot_model=waffle_pi
 ```
+```bash
+source ~/.bashrc
+```
 <br></br>
 ## 1.2 Installation
 
