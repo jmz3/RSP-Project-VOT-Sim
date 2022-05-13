@@ -14,13 +14,14 @@
 <p>@ Johns Hopkins University</p> 
 </h4>
 
-
+<br></br>
 ### Table of Content
 0. [Introduction](#1-Introduction)
 1. [rerequisites](#2-Prerequisites)
 2. [Running Tutorial](#3-Running-Tutorial)
 
 
+<br></br>
 # 0. Introduction
 This repository is for the final project of EN 530.707 Robot System Programming. The goal for our project is to develop a stack of packages that can conduct autonomous SLAM, autonomous object tracking and following. There are two repositories for this project. The repo with –Sim suffix contains all the packages needed to run simulation. And the repo with –Pro suffix provides all the packages needed to perform the tasks on the prototype. The links to these repositories are as follows:  
  - [RSP-Project-VOT-Sim](https://github.com/jeremyzz830/RSP-Project-VOT-Sim) : -Sim is short for simulation
