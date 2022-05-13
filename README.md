@@ -19,6 +19,7 @@
 0. [Introduction](#0-Introduction)
 1. [Prerequisites](#I-Prerequisites)
 2. [Running Tutorial](#II-Running-Tutorial)
+3. [Simulation Demo](#IV-Simulation-Demo)
 
 
 <br></br>
@@ -123,7 +124,12 @@ As the goals are published, the “nav_simulation_init_node” subscribes to the
 
 # IV. Simulation Demo
 
+```bash
+$ roslaunch my_tbot3_workcontrol project_init.launch control_mode:=auto
+```
+
 ![mapping_rviz.gif](DEMO/mapping_rviz.gif)
+![mapping_gazebo.gif](DEMO/mapping_gazebo.gif)
 
 > for more detials check [Docs/Docs.md](Docs/Docs.md)
 
