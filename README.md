@@ -57,10 +57,19 @@ export turtlebot_model=waffle_pi
 ## 1.2 Installation
 
 ### 1.2.1 git clone own repo
+```bash
+$ git clone https://github.com/jeremyzz830/RSP-Project-VOT-Sim.git
+```
 
 ### 1.2.2 build the repo
+```bash
+$ catkin build 
+```
 
 ### 1.2.3 rosdep
+```bash
+rosdep install --from-paths src --ignore-src -r -y
+```
 
 <br></br>
 <br></br>
