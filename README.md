@@ -58,11 +58,13 @@ export turtlebot_model=waffle_pi
 
 ### 1.2.1 git clone own repo
 ```bash
+$ cd vot_ws/simulation/src
 $ git clone https://github.com/jeremyzz830/RSP-Project-VOT-Sim.git
 ```
 
 ### 1.2.2 build the repo
 ```bash
+$ cd vot_ws/simulation
 $ catkin build 
 ```
 
