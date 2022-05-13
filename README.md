@@ -44,7 +44,7 @@ Create a empty workspace before start like this:
 $ mkdir -p vot_ws/simulation/src
 ```
 ```bash
-$ sudo apt-get install ros-melodic-timed_roslaunch
+$ sudo apt-get install ros-melodic-timed-roslaunch
 $ cd vot_ws/simulation/src
 $ git clone https://github.com/ros-perception/slam_gmapping.git
 ```
