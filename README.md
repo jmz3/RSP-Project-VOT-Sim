@@ -17,8 +17,8 @@
 <br></br>
 ### Table of Content
 0. [Introduction](#1-Introduction)
-1. [rerequisites](#2-Prerequisites)
-2. [Running Tutorial](#3-Running-Tutorial)
+1. [Prerequisites](#I-Prerequisites)
+2. [Running Tutorial](#II-Running-Tutorial)
 
 
 <br></br>
