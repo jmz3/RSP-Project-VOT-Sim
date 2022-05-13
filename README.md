@@ -48,6 +48,7 @@ step2 :
 
 .  
 .  
+> for more detials check Docs/Docs.md[http:://] 
 
 <h4 align="right">by JZ TW DW</h4>
 
