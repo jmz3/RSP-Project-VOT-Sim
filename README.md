@@ -1,4 +1,4 @@
-<h1 align="center"><p>Robot System Programming</p><p>Vision-Based Object-Tracking Turtlebot</p></h1>
+<h1 align="center"><p>Robot System Programming</p><p>VOT : Vision-based Object-tracking Turtlebot</p></h1>
 
 ### Contributors
 
@@ -9,10 +9,11 @@
 
  - [Tianyi Weng](https://github.com/WengTianyi): JHED ID : tweng1  
 
-
-<p align="right">May 13th 2022</p>
-<p align="right">@ Johns Hopkins University</p> 
-<p align="right">All rights reserved </p> 
+<h4 align="right">
+<p>May 13th 2022</p>
+<p>@ Johns Hopkins University</p> 
+<p>All rights reserved </p> 
+</h4>
 
 # 0. Introduction
 
