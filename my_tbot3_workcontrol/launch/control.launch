@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="my_tbot3_workcontrol" name="controller_node" type="controller_node" output="screen" />
+
+    <node pkg="rqt_reconfigure" name="rqt_reconfigure" type="rqt_reconfigure" />
+
+    <node pkg="dynamic_reconfigure" name="dynparam" type="dynparam" args="load /controller_node $(find my_tbot3_workcontrol)/config/config.yaml" />
+
+</launch>
+<!-- <node name = "teleop_twist_keyboard"
+type = "teleop_twist_keyboard.py"
+pkg = "teleop_twist_keyboard"
+args = "_speed:=0.1 _turn:=0.2"
+launch-prefix="gnome-terminal command"/> -->

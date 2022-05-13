@@ -1,0 +1,9 @@
+<robot name="ball" xmlns:xacro="http://wwww.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find my_tbot3_nav)/urdf/red_ball.xacro"/>
+
+    <xacro:arg name="radius" default="0.2"/>
+
+    <xacro:ball radius="$(arg radius)"/>
+
+</robot>

@@ -1,0 +1,7 @@
+<launch>
+    <arg name="radius" default="0.2"/>
+
+    <param name="red_ball_description"
+            command="$(find xacro)/xacro --inorder '$(find my_tbot3_nav)/urdf/red_ball.urdf.xacro' radius:=$(arg radius)"/>
+    
+</launch>

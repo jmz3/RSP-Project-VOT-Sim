@@ -1,0 +1,14 @@
+<launch>
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
+    
+    <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
+        <arg name="slam_methods" value="gmapping"/>
+    </include>
+
+    <node name = "teleop_twist_keyboard"
+        type = "teleop_twist_keyboard.py"
+        pkg = "teleop_twist_keyboard"
+        args = "_speed:=0.1 _turn:=0.2"
+        launch-prefix="gnome-terminal --command"/>
+
+</launch> 

@@ -1,0 +1,37 @@
+<launch>
+
+    <arg name = "model" default="waffle_pi"/>
+    <arg name="x_pos" default="0"/>
+    <arg name="y_pos" default="0"/>
+    <arg name="z_pos" default="0"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/turtlebot3_stage_4.world"/>
+    </include>
+
+    <param name="robot_description" 
+        command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro"/>
+
+    <node pkg="gazebo_ros" 
+        type="spawn_model" 
+        name="spawn_urdf"  
+        args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+
+    <node name="robot_state_publisher" 
+        pkg="robot_state_publisher" 
+        type="robot_state_publisher"/>
+
+    <node name="rviz" 
+        pkg="rviz" 
+        type="rviz" 
+        args="-d $(find my_tbot3_sim)/config/my_config.rviz"/>
+
+    <node name = "teleop_twist_keyboard"
+        type = "teleop_twist_keyboard.py"
+        pkg = "teleop_twist_keyboard"
+        output = "screen"
+        args = "_speed:=0.1 _turn:=0.2"/>
+    
+    <!-- <include file="$(find turtlebot3_teleop)/launch/turtlebot3_teleop_key.launch"/> -->
+
+</launch>

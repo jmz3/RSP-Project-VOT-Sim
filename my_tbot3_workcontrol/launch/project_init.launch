@@ -1,0 +1,15 @@
+<launch>
+
+  <arg name = "control_mode" default="auto"/>
+
+  <include file="$(find my_tbot3_sim)/launch/simulation_slam_$(arg control_mode).launch"/>
+
+  <include file="$(find timed_roslaunch)/timed_roslaunch.launch">
+    <arg name="time" value="2" />
+    <arg name="pkg" value="my_tbot3_workcontrol" />
+    <arg name="file" value="control.launch" />
+    <arg name="node_name" value="timed_roslaunch" /> 
+  </include>
+
+
+</launch>

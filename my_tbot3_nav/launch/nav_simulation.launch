@@ -1,0 +1,26 @@
+<launch>
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
+
+    <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+        <arg name="map_file" value="/home/$(env USER)/Downloads/map.yaml"/>
+    </include>
+
+    <node pkg = "my_tbot3_nav"
+        type = "nav_simulation_init_node"
+        name = "type_init_node"/>
+    
+    <include file="$(find my_tbot3_nav)/launch/red_ball_upload.launch"/>
+    
+    <node pkg="gazebo_ros"
+        name="spawn_model"
+        type="spawn_model"
+        args="-urdf -param red_ball_description -model ball -x 1.5 -y 1.1">->
+    </node>
+
+    <node pkg="my_tbot3_nav"
+        name = "fake_goal_node"
+        type = "fake_goal_node"
+        output = "screen"/>
+
+</launch>

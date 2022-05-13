@@ -1,0 +1,26 @@
+<launch>
+    
+    <include file="$(find my_tbot3_nav)/launch/red_ball_upload.launch"/>
+
+    <node pkg="joint_state_publisher_gui" 
+        type="joint_state_publisher_gui" 
+        name="joint_state_publisher_gui">
+    </node>
+
+    <node pkg="robot_state_publisher"
+            type="robot_state_publisher"
+            name="robot_state_publisher">
+    </node>
+
+    <node pkg="gazebo_ros"
+        type="gazebo"
+        name="gazebo"/>
+
+    <node pkg="gazebo_ros"
+        name="spawn_model"
+        type="spawn_model"
+        args="-urdf -param robot_description -model myrobot -z -0.2">
+    </node>
+
+    <node pkg="rviz" name="rviz" type="rviz"/>
+</launch>

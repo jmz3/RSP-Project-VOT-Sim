@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "auto_move"
+        type = "auto_move_node"
+        name = "auto_move_node"/>
+</launch>

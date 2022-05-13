@@ -1,0 +1,11 @@
+<launch>
+
+    <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+        <arg name="map_file" value="/home/$(env USER)/Downloads/map.yaml"/>
+    </include>
+ 
+    <!--<node pkg = "prototype_nav"
+        type = "nav_init_node"
+        name = "nav_init_node"/>--> 
+
+</launch>

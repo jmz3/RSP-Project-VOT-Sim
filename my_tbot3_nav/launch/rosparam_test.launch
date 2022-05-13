@@ -1,0 +1,3 @@
+<launch>
+    <rosparam command="load" file="/tmp/stop_position.yaml" />
+</launch>
