@@ -1,0 +1,12 @@
+<launch>
+    <!-- <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/> -->
+
+    <node pkg="prototype_manager" name="manager_node" type="manager_node" output="screen" />
+
+    <node pkg="auto_move" name="auto_move" type="auto_move_node" output="screen" />
+
+    <node pkg="rqt_reconfigure" name="rqt_reconfigure" type="rqt_reconfigure" />
+
+    <node pkg="dynamic_reconfigure" name="dynparam" type="dynparam" args="load /manager_node $(find prototype_manager)/config/config.yaml" />
+
+</launch>
