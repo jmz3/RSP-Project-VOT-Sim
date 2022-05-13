@@ -8,9 +8,9 @@
 # 0. Content
 <br></br>
 # Table of Content
-0. [Packages](#1-Packages)
-1. [Functional Nodes and Topics](#3-Functional-Nodes-and-Topics)
-2. [Launch Files](#3-Launch-Files)
+1. [Packages](#1-Packages)
+2. [Functional Nodes and Topics](#2-Functional-Nodes-and-Topics)
+3. [Launch Files](#3-Launch-Files)
 
 # 1. Packages
 
