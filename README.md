@@ -124,12 +124,21 @@ As the goals are published, the “nav_simulation_init_node” subscribes to the
 
 # IV. Simulation Demo
 
+## For map generation with gmapping
 ```bash
 $ roslaunch my_tbot3_workcontrol project_init.launch control_mode:=auto
 ```
 
 ![mapping_rviz.gif](DEMO/mapping_rviz.gif)
 ![mapping_gazebo.gif](DEMO/mapping_gazebo.gif)
+
+## For navigation and goal detection
+```bash
+$ roslaunch my_tbot3_nav nav_simulation.launch 
+```
+![mapping_rviz.gif](DEMO/nav_rviz.gif)
+![mapping_gazebo.gif](DEMO/nav_gazebo.gif)
+
 
 > for more detials check [Docs/Docs.md](Docs/Docs.md)
 
