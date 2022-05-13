@@ -1,18 +1,20 @@
-<h1 align="center">RSP Final Project</h1>
-<h2 align="center">Vision-Based Object-Tracking Turtlebot</h2>
+<h1 align="center"><p>Robot System Programming</p><p>Vision-Based Object-Tracking Turtlebot</p></h1>
 
-# Contributors
+### Contributors
 
-Created by 
-[Jiaming Zhang](https://github.com/jeremyzz830): JHED ID : jzhan282
-[Yixun 'Daniel' Wang](https://github.com/DanielW1112): JHED ID : ywang317
-[Tianyi Weng](https://github.com/WengTianyi): JHED ID : tweng1
+#### Created and Maintained by:  
+ - [Jiaming Zhang](https://github.com/jeremyzz830): JHED ID : jzhan282  
 
-May 13th 2022
-@ Johns Hopkins University
-All rights reserved
+ - [Yixun 'Daniel' Wang](https://github.com/DanielW1112): JHED ID : ywang317  
 
-# Introduction
+ - [Tianyi Weng](https://github.com/WengTianyi): JHED ID : tweng1  
+
+
+<p align="right">May 13th 2022</p>
+<p align="right">@ Johns Hopkins University</p> 
+<p align="right">All rights reserved </p> 
+
+# 0. Introduction
 
 
 # I. Prerequisites
