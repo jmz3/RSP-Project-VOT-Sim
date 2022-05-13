@@ -41,7 +41,7 @@ This repo is created under Ubuntu 18.04LLTS Bionic Beaver.
 
 Create a empty workspace before start like this:
 ```bash
-$ mkdir vot_ws/simulation/src
+$ mkdir -p vot_ws/simulation/src
 ```
 ```bash
 $ sudo apt-get install ros-melodic-timed_roslaunch
