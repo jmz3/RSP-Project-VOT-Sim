@@ -13,27 +13,27 @@ This package detects and calculates the position of a red ball in the world fram
 ### My_tbot3_nav  
 This package contains all the source code and launch file for the navigation section of our project. It includes nodes for simulatively initializing navigation process, publishing navigation points, and transcribing these points into the proper navigation goal messages. This package also contains the URDF for a ball to be placed in the environment. The launch files will launch and load the environment, run all the associated nodes, and load in the map and the ball URDF.   
  
-## My_tbot3_sim 
+### My_tbot3_sim 
 This package contains the launch files for SLAM. It launches Gazebo and RVIZ and loads the robot. Based on the “control_mode” argument, it will also start the “auto_move_node” for autonomous SLAM or “teleop_twist_keyboard” for user-controlled SLAM. 
    
-My_tbot3_workcontrol 
+### My_tbot3_workcontrol 
 This package contains a dynamic reconfigure file that offers a user interface for terminating the SLAM. The launch file will not only launch the SLAM files in “my_tbot3_sim” package but will also start the server waiting to end SLAM at the user’s request, after which map from SLAM will be saved.  
  
  
-## Turtlebot3  
+### Turtlebot3  
 This folder contains all the necessary packages for Turtlebot3, including configuration files, URDF, and launch files.  
 
 # 2. Functional Nodes & Topics
 ## “auto_move_node” 
 Drive the robot by publishing geometry_msgs/Twist messages to /cmd_vel. It also subscribes to /scan and uses the LiDar information from the robot to avoid obstacles.  
  
-## “controller_node” 
+### “controller_node” 
 Node for dynamic reconfigure. It offers the user a button for ending the SLAM phase. The program can then initialize a shutdown sequence and save the map from SLAM. 
  
-## “fake_goal_node” 
+### “fake_goal_node” 
 Publish waypoints’ coordinates in geometry_msgs/Point messaage to /fake_goal. It also subscribes to /move_base/result to collect robot’s result. 
  
-## “nav_simulation_init_node” 
+### “nav_simulation_init_node” 
 Publishing a geometry_msgs/PoseWithCovarianceStamped message to /initialpose to initialize robot’s position in the environment. It then subscribes to /odom and /fake_goal to transcribe the waypoint information from geometry_msgs/Point to geometry_msgs/PoseStamped and publishes to “/move_base_simple/goal”. 
 
 # 3. Launch Files
