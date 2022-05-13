@@ -5,7 +5,7 @@
 <img src="https://github.com/jeremyzz830/RSP-Project-VOT-Sim/blob/master/Docs/simulation_only.png" width="650px" height="400px"/>
 </p>
 
-# 0. Content
+
 <br></br>
 # Table of Content
 1. [Packages](#1-Packages)
