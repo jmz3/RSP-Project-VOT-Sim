@@ -1,8 +1,7 @@
-<h1 align="center">RSP Final Project</h1>
-<h2 align="center">Vision Based Object Tracking Turtlebot</h2>
+<h1 align="center"><p>Robot System Programming</p><p>VOT : Vision-based Object-tracking Turtlebot</p></h1>
 
 <p align="center">
-<img src="https://github.com/jeremyzz830/RSP-Project-VOT-Sim/blob/master/Docs/simulation_only.png" width="650px" height="400px"/>
+<img src="https://github.com/jeremyzz830/RSP-Project-VOT-Sim/blob/master/Docs/Structure_Simulation.png" width="1040px" height="760px"/>
 </p>
 
 
