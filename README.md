@@ -32,6 +32,8 @@ This repository hosts the final project of EN.530.707 Robot System Programming a
 <br></br>
  - [RSP-Project-VOT-Pro](https://github.com/jeremyzz830/RSP-Project-VOT-Pro) : -Pro is short for prototype
 <br></br>
+
+Just for a quick guide. Refer to [Section I](#I-Prerequisites) to learn how to distribute our repo. Refer to [Section II-workflow](#II-Running-Tutorial) to learn how to use our repo step by step.
  
  > **For more detials about packages, nodes and topics, please check [Docs/Docs.md](Docs/Docs.md)**
 
@@ -50,11 +52,7 @@ $ sudo apt-get install ros-melodic-timed-roslaunch
 $ sudo apt-get install ros-melodic-dwa-local-planner
 $ sudo apt-get install ros-melodic-gmapping
 ```
-
-And then, create an empty workspace before start:
-```bash
-$ mkdir -p ~/vot_ws/simulation/src
-```
+You can ignore this if you have already installed these packages.
 <br></br>
 ### Modify bashrc
 ```bash
@@ -66,7 +64,13 @@ Note: "source ~/.bashrc" needs to be run everytime a new terminal window is open
 <br></br>
 ## 1.2 Installation
 
-### git clone own repo
+### git clone this repo
+
+Create an empty workspace before start:
+```bash
+$ mkdir -p ~/vot_ws/simulation/src
+```
+
 Get into this directory and clone this repo
 ```bash
 $ cd ~/vot_ws/simulation/src
@@ -88,6 +92,8 @@ $ rosdep install --from-paths src --ignore-src -r -y
 <br></br>
 # II. Running Tutorial
 ## Usage
+This part aims to demonstrate the functionality of every launch files developped in this repo.  
+
 #### start_simulation.launch
 To launch this part, type the following command in a new terminal:
 ```bash
@@ -111,17 +117,17 @@ This is the second section of our project. This launch file will launch Gazebo a
 <br></br>
 
 ## Workflow
-Step1 :
+### Step1 :
 ```bash
 $ roslaunch my_tbot3_workcontrol project_init.launch control_mode:=auto
 ```
 This command will start the SLAM process with autonomous driving for the robot.  
 
-Step2 :  
+### Step2 :  
 
 Once the map is complete, use the dynamic reconfigure GUI and switch the “Switch_to_Navigation” button from “NO” to “YES”. This will then trigger a shutdown sequence that automatically saves the map (into the Downloads folder) and terminates the node. Use “ctrl C” to shut down any remaining node.
 
-Step3 ：  
+### Step3 ：  
 ```bash
 $ roslaunch my_tbot3_nav nav_simulation.launch 
 ```
