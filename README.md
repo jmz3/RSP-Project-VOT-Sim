@@ -62,6 +62,7 @@ export turtlebot_model=waffle_pi
 ```bash
 $source ~/.bashrc
 ```
+Note: "source ~/.bashrc" needs to be run everything a new terminal window is opened.
 <br></br>
 ## 1.2 Installation
 
