@@ -138,6 +138,8 @@ This launch file will start several features.
 
 As the goals are published, the “nav_simulation_init_node” subscribes to the topic and transcribes the goal as a geometry_msgs/PoseStamped message to publish to the “/move_base_simple/goal”. Initially, the robot will be put in a patrol mode that circles the environment. Each time the robot reaches a navigation goal, a random integer will be generated between 1 and 10, and if the number is 1, the robot will be asked to travel to the ball, which is the final navigation goal.  
 
+
+  
 # III. Simulation Demo
 
 ## For map generation with gmapping
@@ -155,6 +157,7 @@ $ roslaunch my_tbot3_nav nav_simulation.launch
 ![mapping_rviz.gif](DEMO/nav_rviz.gif)
 ![mapping_gazebo.gif](DEMO/nav_gazebo.gif)
 
+  
 # IV. Prototype Demo
 We've distributed the whole project on Turtlebot3-Waffle_pi. The demo on the prototype has been posted here:
   
