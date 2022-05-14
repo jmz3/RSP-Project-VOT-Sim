@@ -40,19 +40,27 @@ This repository hosts the final project of EN.530.707 Robot System Programming a
 # I. Prerequisites
 
 ## 1.1 System Setting
-### ubuntu
+### Ubuntu
 This repo is created under Ubuntu 18.04LLTS Bionic Beaver with ROS Melodic.
 <br></br>
-### ros required package
-
-Create an empty workspace before start:
-```bash
-$ mkdir -p vot_ws/simulation/src
-```
+### ROS required package
+First, our project depends on several packages, install them before you pull this repo.
 ```bash
 $ sudo apt-get install ros-melodic-timed-roslaunch
+$ sudo apt-get install ros-melodic-dwa-local-planner
+$ sudo apt-get install ros-melodic-gmapping
+```
+
+And then, create an empty workspace before start:
+```bash
+$ mkdir -p ~/vot_ws/simulation/src
+```
+
+Get into this directory and clone this repo
+```bash
+
 $ cd vot_ws/simulation/src
-$ git clone https://github.com/ros-perception/slam_gmapping.git
+$ git clone https://github.com/jeremyzz830/RSP-Project-VOT-Sim.git
 ```
 <br></br>
 ### bashrc
