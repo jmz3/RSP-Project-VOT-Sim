@@ -22,6 +22,7 @@
 1. [Prerequisites](#I-Prerequisites)
 2. [Running Tutorial](#II-Running-Tutorial)
 3. [Simulation Demo](#III-Simulation-Demo)
+4. [Prototype Demo](#IV-Prototype-Demo)
 
 
 <br></br>
@@ -33,7 +34,6 @@ This repository hosts the final project of EN.530.707 Robot System Programming a
 <br></br>
  
  > **For more detials about packages, nodes and topics, please check [Docs/Docs.md](Docs/Docs.md)**
- https://drive.google.com/drive/folders/1RP03UFPCJpnJTt2jAu6Q22l8seSf-LJy
 
 
 <br></br>
@@ -55,38 +55,31 @@ And then, create an empty workspace before start:
 ```bash
 $ mkdir -p ~/vot_ws/simulation/src
 ```
-
-Get into this directory and clone this repo
-```bash
-
-$ cd vot_ws/simulation/src
-$ git clone https://github.com/jeremyzz830/RSP-Project-VOT-Sim.git
-```
 <br></br>
-### bashrc
+### Modify bashrc
 ```bash
-export turtlebot_model=waffle_pi
+$ echo 'export turtlebot_model=waffle_pi' >> ~/.bashrc 
+$ source ~/.bashrc
 ```
-```bash
-$source ~/.bashrc
-```
-Note: "source ~/.bashrc" needs to be run everything a new terminal window is opened.
+Note: "source ~/.bashrc" needs to be run everytime a new terminal window is opened.
+  
 <br></br>
 ## 1.2 Installation
 
-### 1.2.1 git clone own repo
+### git clone own repo
+Get into this directory and clone this repo
 ```bash
-$ cd vot_ws/simulation/src
+$ cd ~/vot_ws/simulation/src
 $ git clone https://github.com/jeremyzz830/RSP-Project-VOT-Sim.git
 ```
 
-### 1.2.2 build the repo
+### build the repo
 ```bash
-$ cd vot_ws/simulation
+$ cd ~/vot_ws/simulation
 $ catkin build 
 ```
 
-### 1.2.3 rosdep
+### rosdep
 ```bash
 $ rosdep install --from-paths src --ignore-src -r -y
 ```
@@ -101,20 +94,21 @@ To launch this part, type the following command in a new terminal:
 $ roslaunch my_tbot3_sim start_simulation.launch 
 ```
 This launch file offers a basic overview. It will launch an environment in the Gazebo and spawn the model for Turtlebot3. It will also start the teleop interface so that the turtlebot3 can be driven around the environment. Lastly, it will also start RVIZ to display the scan results of the LiDar.  
-
+<br></br>
 #### project_init.launch
 To launch this part, type the following command in a new terminal:
 ```bash
 $ roslaunch my_tbot3_workcontrol project_init.launch  
 ```
 This is the first “real” section of our project. Argument “control_mode” is by default set as “auto”, which allows turtlebot to autonomously navigate and avoid obstacles during map building. To manually navigate turtlebot, please add argument “control_mode:=teleop” to use keyboard for robot motion control. This launch file brings up Gazebo, Rviz, SLAM, and nodes “controller_node” and “rqt_reconfigure”. Inside the rqt_reconfigure interface, by choosing “controller_node” and then “Switch_to_navigation” , the dropdown offers an option to terminate SLAM map building process. Selecting “yes(1)” can stop all nodes and map will be saved to the path “/home/$USER/Downloads/map”. 
-
+<br></br>
 #### nav_simulation.launch
 To launch this part, type the following command in a new terminal:
 ```bash
 roslaunch my_tbot3_nav nav_simulation.launch 
 ```
 This is the second section of our project. This launch file will launch Gazebo and RVIZ. Initially, the robot will be placed in a patrol mode and travel around the simulated environment by following a set of pre-determined waypoints. Via a random number generator, at certain time, the robot will be asked to move to the position in front of the ball. 
+<br></br>
 
 ## Workflow
 Step1 :
@@ -156,4 +150,8 @@ $ roslaunch my_tbot3_nav nav_simulation.launch
 ![mapping_rviz.gif](DEMO/nav_rviz.gif)
 ![mapping_gazebo.gif](DEMO/nav_gazebo.gif)
 
+# IV. Prototype Demo
+We've distributed the whole project on Turtlebot3-Waffle_pi. The demo on the prototype has been posted here:
+  
+[https://drive.google.com/drive/folders/1RP03UFPCJpnJTt2jAu6Q22l8seSf-LJy](https://drive.google.com/drive/folders/1RP03UFPCJpnJTt2jAu6Q22l8seSf-LJy)
 
