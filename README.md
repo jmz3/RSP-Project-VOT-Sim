@@ -55,7 +55,7 @@ And then, create an empty workspace before start:
 ```bash
 $ mkdir -p ~/vot_ws/simulation/src
 ```
-<br></br>
+
 ### Modify bashrc
 ```bash
 $ echo 'export turtlebot_model=waffle_pi' >> ~/.bashrc 
