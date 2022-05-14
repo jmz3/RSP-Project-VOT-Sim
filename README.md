@@ -26,7 +26,7 @@
 
 <br></br>
 # Introduction
-This repository is for the final project of EN 530.707 Robot System Programming. The goal for our project is to develop a stack of packages that can conduct autonomous SLAM, autonomous object tracking and following. There are two repositories for this project. The repo with –Sim suffix contains all the packages needed to run simulation. And the repo with –Pro suffix provides all the packages needed to perform the tasks on the prototype. The links to these repositories are as follows:  
+This repository hosts the final project of EN.530.707 Robot System Programming at Johns Hopkins University. The goal for our project is to develop a stack of packages that can conduct autonomous SLAM and autonomous object tracking and following. There are two repositories for this project. The repo with –Sim suffix contains all the packages needed to run simulation. And the repo with –Pro suffix provides all the packages needed to perform the tasks on the prototype. The links to these repositories are as follows:  
  - [RSP-Project-VOT-Sim](https://github.com/jeremyzz830/RSP-Project-VOT-Sim) : -Sim is short for simulation
 <br></br>
  - [RSP-Project-VOT-Pro](https://github.com/jeremyzz830/RSP-Project-VOT-Pro) : -Pro is short for prototype
@@ -41,7 +41,7 @@ This repository is for the final project of EN 530.707 Robot System Programming.
 
 ## 1.1 System Setting
 ### ubuntu
-This repo is created under Ubuntu 18.04LLTS Bionic Beaver.
+This repo is created under Ubuntu 18.04LLTS Bionic Beaver with ROS-Melodic.
 <br></br>
 ### ros required package
 
