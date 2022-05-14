@@ -41,7 +41,7 @@ This repository hosts the final project of EN.530.707 Robot System Programming a
 
 ## 1.1 System Setting
 ### ubuntu
-This repo is created under Ubuntu 18.04LLTS Bionic Beaver with ROS-Melodic.
+This repo is created under Ubuntu 18.04LLTS Bionic Beaver with ROS Melodic.
 <br></br>
 ### ros required package
 
