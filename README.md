@@ -76,7 +76,7 @@ $ catkin build
 
 ### 1.2.3 rosdep
 ```bash
-rosdep install --from-paths src --ignore-src -r -y
+$ rosdep install --from-paths src --ignore-src -r -y
 ```
 
 <br></br>
