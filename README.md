@@ -14,12 +14,14 @@
 <p>@ Johns Hopkins University</p> 
 </h4>
 
+---
+
 <br></br>
 # Table of Content
 0. [Introduction](#0-Introduction)
 1. [Prerequisites](#I-Prerequisites)
 2. [Running Tutorial](#II-Running-Tutorial)
-3. [Simulation Demo](#IV-Simulation-Demo)
+3. [Simulation Demo](#III-Simulation-Demo)
 
 
 <br></br>
@@ -28,8 +30,9 @@ This repository is for the final project of EN 530.707 Robot System Programming.
  - [RSP-Project-VOT-Sim](https://github.com/jeremyzz830/RSP-Project-VOT-Sim) : -Sim is short for simulation
 <br></br>
  - [RSP-Project-VOT-Pro](https://github.com/jeremyzz830/RSP-Project-VOT-Pro) : -Pro is short for prototype
+<br></br>
  
- > for more detials about packages, nodes and topics, please check [Docs/Docs.md](Docs/Docs.md)
+ > **For more detials about packages, nodes and topics, please check [Docs/Docs.md](Docs/Docs.md)**
  
 
 
@@ -127,7 +130,7 @@ This launch file will start several features.
 
 As the goals are published, the “nav_simulation_init_node” subscribes to the topic and transcribes the goal as a geometry_msgs/PoseStamped message to publish to the “/move_base_simple/goal”. Initially, the robot will be put in a patrol mode that circles the environment. Each time the robot reaches a navigation goal, a random integer will be generated between 1 and 10, and if the number is 1, the robot will be asked to travel to the ball, which is the final navigation goal.  
 
-# IV. Simulation Demo
+# III. Simulation Demo
 
 ## For map generation with gmapping
 ```bash
