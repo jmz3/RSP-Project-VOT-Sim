@@ -12,7 +12,7 @@
 2. [Functional Nodes and Topics](#2-Functional-Nodes-and-Topics)
 3. [Launch Files](#3-Launch-Files)
 
-# 1. Packages
+# I. Packages
 
 ### Auto_move 
 This package contains the source code for autopiloting the turtlebot3. The “auto_move_node” will publish velocity data to “/cmd_vel”. It will also use LiDar information from “/scan” from the robot to make turns and avoid obstacles. It offers an obstacle avoidance technique using a lidar range-finder. Turtlebot can detect obstacles in front and 15 degrees to the left and right, and robot will turn 0.5 once it reaches 0.8 meters away from obstacles. 
@@ -32,7 +32,7 @@ This package contains a dynamic reconfigure file that offers a user interface fo
 ### Turtlebot3  
 This folder contains all the necessary packages for Turtlebot3, including configuration files, URDF, and launch files.  
 
-# 2. Functional Nodes and Topics
+# II. Functional Nodes and Topics
 ### “auto_move_node” 
 Drive the robot by publishing geometry_msgs/Twist messages to /cmd_vel. It also subscribes to /scan and uses the LiDar information from the robot to avoid obstacles.  
  
@@ -45,7 +45,7 @@ Publish waypoints’ coordinates in geometry_msgs/Point messaage to /fake_goal. 
 ### “nav_simulation_init_node” 
 Publishing a geometry_msgs/PoseWithCovarianceStamped message to /initialpose to initialize robot’s position in the environment. It then subscribes to /odom and /fake_goal to transcribe the waypoint information from geometry_msgs/Point to geometry_msgs/PoseStamped and publishes to “/move_base_simple/goal”. 
 
-# 3. Launch Files
+# III. Launch Files
 
 ### start_simulation.launch 
 
