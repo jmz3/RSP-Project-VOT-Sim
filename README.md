@@ -45,7 +45,7 @@ This repo is created under Ubuntu 18.04LLTS Bionic Beaver with ROS Melodic.
 <br></br>
 ### ros required package
 
-Create a empty workspace before start like this:
+Create an empty workspace before start:
 ```bash
 $ mkdir -p vot_ws/simulation/src
 ```
