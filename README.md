@@ -99,14 +99,14 @@ To launch this part, type the following command in a new terminal:
 ```bash
 $ roslaunch my_tbot3_workcontrol project_init.launch  
 ```
-This is the first “real” section of our project. “control_mode” is by default as “auto”, which allows turtlebot to autonomously navigate and avoid obstacles during map building. To manually navigate turtlebot, please add the command “control_mode:=teleop” to use keyboard for robot motion control. This launch file brings up Gazebo, Rviz, SLAM, and nodes “controller_node” and “rqt_reconfigure”. Inside the rqt_reconfigure interface, by choosing “controller_node” and then “Switch_to_navigation” , the dropdown offers an option to terminate SLAM map building process. Selecting “yes(1)” can stop all nodes and map will be saved to the path “/home/the $USER/Downloads/map”. 
+This is the first “real” section of our project. Argument “control_mode” is by default set as “auto”, which allows turtlebot to autonomously navigate and avoid obstacles during map building. To manually navigate turtlebot, please add argument “control_mode:=teleop” to use keyboard for robot motion control. This launch file brings up Gazebo, Rviz, SLAM, and nodes “controller_node” and “rqt_reconfigure”. Inside the rqt_reconfigure interface, by choosing “controller_node” and then “Switch_to_navigation” , the dropdown offers an option to terminate SLAM map building process. Selecting “yes(1)” can stop all nodes and map will be saved to the path “/home/$USER/Downloads/map”. 
 
 #### nav_simulation.launch
 To launch this part, type the following command in a new terminal:
 ```bash
 roslaunch my_tbot3_nav nav_simulation.launch 
 ```
-This is the second section of our project. This launch file will launch Gazebo and RVIZ. Initially, the robot will be placed in a patrol mode and travel around the simulated environment by following a set of pre-determined waypoints. Via a random number generator, at certain time, the robot will be asked to move in front of the ball. 
+This is the second section of our project. This launch file will launch Gazebo and RVIZ. Initially, the robot will be placed in a patrol mode and travel around the simulated environment by following a set of pre-determined waypoints. Via a random number generator, at certain time, the robot will be asked to move to the position in front of the ball. 
 
 ## Workflow
 Step1 :
