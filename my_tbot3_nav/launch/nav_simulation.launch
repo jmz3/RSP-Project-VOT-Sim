@@ -3,7 +3,7 @@
     <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
 
     <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
-        <arg name="map_file" value="/home/$(env USER)/Downloads/map.yaml"/>
+        <arg name="map_file" value="/tmp/map.yaml"/>
     </include>
 
     <node pkg = "my_tbot3_nav"

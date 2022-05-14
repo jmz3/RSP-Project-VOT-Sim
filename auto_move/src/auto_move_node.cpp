@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
         else if (stop_auto_move == 2)
         {
-            system("rosrun map_server map_saver -f /home/$USER/Downloads/map");
+            system("rosrun map_server map_saver -f /tmp/map");
 
             auto_move.~AutoMove();
             // ROS_INFO("destruct auto_move class object");

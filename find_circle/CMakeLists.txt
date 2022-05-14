@@ -151,8 +151,6 @@ add_definitions(${EIGEN_DEFINITIONS})
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(ball_center src/ball_center.cpp)
-add_executable(test_image src/test_image.cpp)
 add_executable(find_center_node src/find_center_node.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -168,14 +166,6 @@ add_executable(find_center_node src/find_center_node.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-
-target_link_libraries(ball_center
-   ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}
-)
-
-target_link_libraries(test_image
-   ${catkin_LIBRARIES} ${OpenCV_LIBRARIES}
-)
 
 
 target_link_libraries(find_center
