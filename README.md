@@ -1,4 +1,4 @@
-<h1 align="center"><p>Robot System Programming</p><p>VOT : Vision-based Object-tracking Turtlebot</p></h1>
+<h1 align="center"><p>Robot System Programming</p><p> VOT-Sim </p> <p> Simulation for Vision-based Object-tracking Turtlebot</p></h1>
 
 ### Contributors
 
