@@ -26,7 +26,7 @@ void controller::controller_config(my_tbot3_workcontrol::ControllerConfig& confi
         std::cout<<"###################################################################"<<std::endl;
 
         system("rosnode kill /auto_move");
-        system("rosrun map_server map_saver -f /home/$USER/Downloads/map");
+        system("rosrun map_server map_saver -f /tmp/map");
         cmd_vel_pub.publish(stopMSG);
 
         system("rosnode kill /turtlebot3_slam_gmapping");
